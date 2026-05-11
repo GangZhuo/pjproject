@@ -63,6 +63,7 @@ DEPCXXFLAGS = $($(APP)_CXXFLAGS)
 
 # Dependency file
 DEP_FILE := .$(app)-$(TARGET_NAME).depend
+SRC_FILE := .$(app)-$(TARGET_NAME).srclist
 
 
 print_common:
@@ -225,23 +226,19 @@ endif
 
 depend:
 	$(subst @@,$(DEP_FILE),$(HOST_RM))
-	for F in $(FULL_SRCS); do \
-	   if test -f $$F; then \
-	     echo "$(OBJDIR)/" | tr -d '\n' >> $(DEP_FILE); \
-	     if echo $$F | grep -q "\.c[c|pp]"; then \
-		dep="$(CXX) -M $(DEPCXXFLAGS) $$F"; \
-	     else \
-		dep="$(CC) -M $(DEPCFLAGS) $$F"; \
-	     fi; \
-	     if eval $$dep | sed '/^#/d' >> $(DEP_FILE); then \
-		true; \
-	     else \
-		echo 'err:' >> $(DEP_FILE); \
-		rm -f $(DEP_FILE); \
-		exit 1; \
-	     fi; \
-	   fi; \
-	done;
+	$(file > $(SRC_FILE),$(FULL_SRCS))
+	while read -d ' ' F; do \
+	  if [ -f "$$F" ]; then \
+	    echo Building "$$F"; \
+	    printf "%s/" "$(OBJDIR)" >> $(DEP_FILE); \
+	    if [[ "$$F" =~ \.(cpp|cc)$$ ]]; then \
+	      $(CXX) -M $(DEPCXXFLAGS) "$$F" | sed '/^#/d' >> $(DEP_FILE) || exit 1; \
+	    else \
+	      $(CC) -M $(DEPCFLAGS) "$$F" | sed '/^#/d' >> $(DEP_FILE) || exit 1; \
+	    fi; \
+	  fi; \
+	done < $(SRC_FILE);
+	$(subst @@,$(SRC_FILE),$(HOST_RM))
 
 dep: depend
 
