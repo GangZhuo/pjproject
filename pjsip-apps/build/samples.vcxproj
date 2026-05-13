@@ -295,8 +295,8 @@
     <NMakeReBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=release VC_VER=14 ARCH=win32 /a</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=release VC_VER=14 ARCH=win32 clean</NMakeCleanCommandLine>
     <NMakeOutput>All samples</NMakeOutput>
-    <LibraryPath>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <NMakeBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=release VC_VER=14 ARCH=win64</NMakeBuildCommandLine>
@@ -315,8 +315,8 @@
     <NMakeReBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=debug VC_VER=14 ARCH=win32 /a</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=debug VC_VER=14 ARCH=win32 clean</NMakeCleanCommandLine>
     <NMakeOutput>All samples</NMakeOutput>
-    <LibraryPath>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <NMakeBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=debug VC_VER=14 ARCH=win64</NMakeBuildCommandLine>
@@ -335,8 +335,8 @@
     <NMakeReBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=debug-static VC_VER=14 ARCH=win32 /a</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=debug-static VC_VER=14 ARCH=win32 clean</NMakeCleanCommandLine>
     <NMakeOutput>All samples</NMakeOutput>
-    <LibraryPath>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Static|x64'">
     <NMakeBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=debug-static VC_VER=14 ARCH=win64</NMakeBuildCommandLine>
@@ -355,8 +355,8 @@
     <NMakeReBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=release-dynamic VC_VER=14 ARCH=win32 /a</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=release-dynamic VC_VER=14 ARCH=win32 clean</NMakeCleanCommandLine>
     <NMakeOutput>All samples</NMakeOutput>
-    <LibraryPath>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Dynamic|x64'">
     <NMakeBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=release-dynamic VC_VER=14 ARCH=win64</NMakeBuildCommandLine>
@@ -375,8 +375,8 @@
     <NMakeReBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=debug-dynamic VC_VER=14 ARCH=win32 /a</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=debug-dynamic VC_VER=14 ARCH=win32 clean</NMakeCleanCommandLine>
     <NMakeOutput>All samples</NMakeOutput>
-    <LibraryPath>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Dynamic|x64'">
     <NMakeBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=debug-dynamic VC_VER=14 ARCH=win64</NMakeBuildCommandLine>
@@ -395,8 +395,8 @@
     <NMakeReBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=release-static VC_VER=14 ARCH=win32 /a</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=release-static VC_VER=14 ARCH=win32 clean</NMakeCleanCommandLine>
     <NMakeOutput>All samples</NMakeOutput>
-    <LibraryPath>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Static|x64'">
     <NMakeBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=release-static VC_VER=14 ARCH=win64</NMakeBuildCommandLine>
