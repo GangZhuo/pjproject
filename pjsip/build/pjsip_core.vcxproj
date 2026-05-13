@@ -253,7 +253,7 @@
   </PropertyGroup>
   <!-- Override the PlatformToolset -->
   <PropertyGroup>
-    <PlatformToolset>$(BuildToolset)</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet Condition="'$(API_Family)'!='WinDesktop'">
     </CharacterSet>
   </PropertyGroup>
@@ -393,7 +393,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../include;../../pjlib/include;../../pjlib-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;../../pjlib/include;../../pjlib-util/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
@@ -439,7 +439,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../include;../../pjlib/include;../../pjlib-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;../../pjlib/include;../../pjlib-util/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
@@ -487,7 +487,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Static|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../include;../../pjlib/include;../../pjlib-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;../../pjlib/include;../../pjlib-util/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
@@ -535,7 +535,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Dynamic|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../include;../../pjlib/include;../../pjlib-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;../../pjlib/include;../../pjlib-util/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
@@ -581,7 +581,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Dynamic|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../include;../../pjlib/include;../../pjlib-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;../../pjlib/include;../../pjlib-util/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
@@ -629,7 +629,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Static|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../include;../../pjlib/include;../../pjlib-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;../../pjlib/include;../../pjlib-util/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>

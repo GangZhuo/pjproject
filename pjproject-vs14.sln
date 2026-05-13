@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.11.35327.3
+# Visual Studio Version 18
+VisualStudioVersion = 18.5.11716.220
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1DFF1CF3-DBD7-4DA4-A36D-663D695EB678}"
 	ProjectSection(SolutionItems) = preProject
@@ -119,6 +119,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "swig_csharp_pjsua2", "pjsip-apps\build\swig_csharp_pjsua2.vcxproj", "{549DFCA7-7B0C-410D-BCEC-9C204AD45638}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePjsua2CS", "pjsip-apps\src\swig\csharp\sample\SimplePjsua2CS\SimplePjsua2CS.csproj", "{3DCDD02D-C3CF-40EB-A66C-F7C2DAD93FD9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "microsip", "MicroSIP-3.22.3-src\microsip.vcxproj", "{BB46A3FD-3E25-44BF-9DED-36A8E838A095}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2502,6 +2504,66 @@ Global
 		{3DCDD02D-C3CF-40EB-A66C-F7C2DAD93FD9}.Release-Static|ARM64.ActiveCfg = Release|Any CPU
 		{3DCDD02D-C3CF-40EB-A66C-F7C2DAD93FD9}.Release-Static|Win32.ActiveCfg = Release|Any CPU
 		{3DCDD02D-C3CF-40EB-A66C-F7C2DAD93FD9}.Release-Static|x64.ActiveCfg = Release|Any CPU
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug|Any CPU.Build.0 = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug|ARM.ActiveCfg = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug|ARM.Build.0 = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug|ARM64.ActiveCfg = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug|ARM64.Build.0 = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug|Win32.Build.0 = Debug|Win32
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug|x64.ActiveCfg = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug|x64.Build.0 = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Dynamic|Any CPU.ActiveCfg = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Dynamic|Any CPU.Build.0 = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Dynamic|ARM.ActiveCfg = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Dynamic|ARM.Build.0 = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Dynamic|ARM64.ActiveCfg = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Dynamic|ARM64.Build.0 = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Dynamic|Win32.ActiveCfg = Debug|Win32
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Dynamic|Win32.Build.0 = Debug|Win32
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Dynamic|x64.ActiveCfg = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Dynamic|x64.Build.0 = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Static|Any CPU.ActiveCfg = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Static|Any CPU.Build.0 = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Static|ARM.ActiveCfg = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Static|ARM.Build.0 = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Static|ARM64.ActiveCfg = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Static|ARM64.Build.0 = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Static|Win32.ActiveCfg = Debug|Win32
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Static|Win32.Build.0 = Debug|Win32
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Static|x64.ActiveCfg = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Debug-Static|x64.Build.0 = Debug|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release|Any CPU.ActiveCfg = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release|Any CPU.Build.0 = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release|ARM.ActiveCfg = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release|ARM.Build.0 = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release|ARM64.ActiveCfg = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release|ARM64.Build.0 = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release|Win32.ActiveCfg = Release|Win32
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release|Win32.Build.0 = Release|Win32
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release|x64.ActiveCfg = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release|x64.Build.0 = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Dynamic|Any CPU.ActiveCfg = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Dynamic|Any CPU.Build.0 = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Dynamic|ARM.ActiveCfg = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Dynamic|ARM.Build.0 = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Dynamic|ARM64.ActiveCfg = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Dynamic|ARM64.Build.0 = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Dynamic|Win32.ActiveCfg = Release|Win32
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Dynamic|Win32.Build.0 = Release|Win32
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Dynamic|x64.ActiveCfg = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Dynamic|x64.Build.0 = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Static|Any CPU.ActiveCfg = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Static|Any CPU.Build.0 = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Static|ARM.ActiveCfg = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Static|ARM.Build.0 = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Static|ARM64.ActiveCfg = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Static|ARM64.Build.0 = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Static|Win32.ActiveCfg = Release|Win32
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Static|Win32.Build.0 = Release|Win32
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Static|x64.ActiveCfg = Release|x64
+		{BB46A3FD-3E25-44BF-9DED-36A8E838A095}.Release-Static|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2524,5 +2586,6 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		pjsip-apps\src\pjsua\winrt\cli\comp\pjsua_cli_shared_comp.vcxitems*{207e7bd4-7b11-4a40-ba3a-cc627762a7b6}*SharedItemsImports = 4
 		pjsip-apps\src\pjsua\winrt\cli\comp\pjsua_cli_shared_comp.vcxitems*{45d41acc-2c3c-43d2-bc10-02aa73ffc7c7}*SharedItemsImports = 9
+		pjsip-apps\src\pjsua\winrt\cli\comp\pjsua_cli_shared_comp.vcxitems*{e75efd41-c7f5-44c8-8ff1-a310d920989d}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal

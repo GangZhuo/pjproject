@@ -253,7 +253,7 @@
   </PropertyGroup>
   <!-- Override the PlatformToolset -->
   <PropertyGroup>
-    <PlatformToolset>$(BuildToolset)</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet Condition="'$(API_Family)'!='WinDesktop'">
     </CharacterSet>
     <ConfigurationType Condition="'$(API_Family)'=='WinDesktop'">Application</ConfigurationType>
@@ -398,13 +398,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <AdditionalDependencies>netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;oleaut32.lib;ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\bin\pjlib-test-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
@@ -451,13 +452,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
-      <AdditionalDependencies>netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;oleaut32.lib;ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;oleaut32.lib;ole32.lib;libcrypto.lib;libssl.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\bin\pjlib-test-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -502,13 +504,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Static|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <AdditionalDependencies>netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;oleaut32.lib;ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\bin\pjlib-test-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Static|ARM'">
@@ -555,13 +558,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Dynamic|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <AdditionalDependencies>netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;oleaut32.lib;ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\bin\pjlib-test-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Dynamic|ARM'">
@@ -606,13 +610,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Dynamic|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <AdditionalDependencies>netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;oleaut32.lib;ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\bin\pjlib-test-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Dynamic|ARM'">
@@ -659,13 +664,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Static|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <AdditionalDependencies>netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;oleaut32.lib;ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\bin\pjlib-test-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Static|ARM'">

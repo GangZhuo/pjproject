@@ -193,7 +193,7 @@
   </PropertyGroup>
   <!-- Override the PlatformToolset -->
   <PropertyGroup>
-    <PlatformToolset>$(BuildToolset)</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet Condition="'$(API_Family)'!='WinDesktop'">
     </CharacterSet>
     <ConfigurationType Condition="'$(API_Family)'=='WinDesktop'">Application</ConfigurationType>
@@ -308,7 +308,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjlib/include;../include;../../pjnath/include;../../pjlib-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjlib/include;../include;../../pjnath/include;../../pjlib-util/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
@@ -316,6 +316,7 @@
       <AdditionalDependencies>dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\bin\pjmedia-test-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).exe</OutputFile>
       <IgnoreSpecificDefaultLibraries>MSVCRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -352,13 +353,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjlib/include;../include;../../pjnath/include;../../pjlib-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjlib/include;../include;../../pjnath/include;../../pjlib-util/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <AdditionalDependencies>dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\bin\pjmedia-test-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -391,7 +393,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Static|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjlib/include;../include;../../pjnath/include;../../pjlib-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjlib/include;../include;../../pjnath/include;../../pjlib-util/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
@@ -399,6 +401,7 @@
       <AdditionalDependencies>dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\bin\pjmedia-test-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).exe</OutputFile>
       <IgnoreSpecificDefaultLibraries>MSVCRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Static|x64'">
@@ -435,13 +438,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Dynamic|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjlib/include;../include;../../pjnath/include;../../pjlib-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjlib/include;../include;../../pjnath/include;../../pjlib-util/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <AdditionalDependencies>dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\bin\pjmedia-test-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Dynamic|x64'">
@@ -474,7 +478,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Dynamic|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjlib/include;../include;../../pjnath/include;../../pjlib-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjlib/include;../include;../../pjnath/include;../../pjlib-util/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
@@ -482,6 +486,7 @@
       <AdditionalDependencies>dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\bin\pjmedia-test-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).exe</OutputFile>
       <IgnoreSpecificDefaultLibraries>MSVCRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Dynamic|x64'">
@@ -518,7 +523,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Static|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjlib/include;../include;../../pjnath/include;../../pjlib-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjlib/include;../include;../../pjnath/include;../../pjlib-util/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
@@ -526,6 +531,7 @@
       <AdditionalDependencies>dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\bin\pjmedia-test-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).exe</OutputFile>
       <IgnoreSpecificDefaultLibraries>MSVCRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Static|x64'">

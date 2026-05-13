@@ -110,7 +110,7 @@
   </PropertyGroup>
   <!-- Override the PlatformToolset -->
   <PropertyGroup>
-    <PlatformToolset>$(BuildToolset)</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet Condition="'$(API_Family)'!='WinDesktop'">
     </CharacterSet>
     <ConfigurationType Condition="'$(API_Family)'=='WinDesktop'">Application</ConfigurationType>
@@ -265,6 +265,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>Iphlpapi.lib;dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Dynamic|Win32'">

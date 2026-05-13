@@ -415,7 +415,7 @@
   </PropertyGroup>
   <!-- Override the PlatformToolset -->
   <PropertyGroup>
-    <PlatformToolset>$(BuildToolset)</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet Condition="'$(API_Family)'!='WinDesktop'">
     </CharacterSet>
   </PropertyGroup>
