@@ -394,13 +394,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <AdditionalDependencies Condition="'$(API_Family)'=='WinDesktop'">Iphlpapi.lib;dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -439,14 +439,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <AdditionalDependencies Condition="'$(API_Family)'=='WinDesktop'">Iphlpapi.lib;dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries Condition="'$(API_Family)'=='WinDesktop'">msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
@@ -489,13 +489,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Static|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <AdditionalDependencies Condition="'$(API_Family)'=='WinDesktop'">Iphlpapi.lib;dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Static|ARM'">
@@ -536,13 +536,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Dynamic|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <AdditionalDependencies Condition="'$(API_Family)'=='WinDesktop'">Iphlpapi.lib;dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Dynamic|ARM'">
@@ -581,13 +581,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Dynamic|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <AdditionalDependencies Condition="'$(API_Family)'=='WinDesktop'">Iphlpapi.lib;dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Dynamic|ARM'">
@@ -628,13 +628,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Static|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFile />
     </ClCompile>
     <Link>
       <AdditionalDependencies Condition="'$(API_Family)'=='WinDesktop'">Iphlpapi.lib;dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Static|ARM'">
