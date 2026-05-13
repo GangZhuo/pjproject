@@ -191,23 +191,23 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;$(SolutionDir)..\deps\sdl_build\SDL2-2.26.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>Iphlpapi.lib;dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;$(SolutionDir)..\deps\sdl_build\SDL2-2.26.2\lib\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Dynamic|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;$(SolutionDir)..\deps\sdl_build\SDL2-2.26.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <AdditionalDependencies>Iphlpapi.lib;dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;$(SolutionDir)..\deps\sdl_build\SDL2-2.26.2\lib\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -262,22 +262,22 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;$(SolutionDir)..\deps\sdl_build\SDL2-2.26.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>Iphlpapi.lib;dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;$(SolutionDir)..\deps\sdl_build\SDL2-2.26.2\lib\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Dynamic|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;$(SolutionDir)..\deps\openssl_build\include;$(SolutionDir)..\deps\opus_build\include;$(SolutionDir)..\deps\ffmpeg_build\include;$(SolutionDir)..\deps\sdl_build\SDL2-2.26.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>Iphlpapi.lib;dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\deps\openssl_build\lib;$(SolutionDir)..\deps\opus_build\lib;$(SolutionDir)..\deps\ffmpeg_build\lib;$(SolutionDir)..\deps\ffmpeg_build\bin;$(SolutionDir)..\deps\sdl_build\SDL2-2.26.2\lib\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
