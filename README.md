@@ -67,3 +67,11 @@ Table of contents:
   - [PJLIB-UTIL](https://docs.pjsip.org/en/latest/api/pjlib-util/index.html) - utilities
   - [PJLIB](https://docs.pjsip.org/en/latest/api/pjlib/index.html) - portable library
 
+# Build MicroSIP
+
+```
+msbuild-extractor-sample --solution pjproject-vs14.sln -c Release-Static -a x86 -o compile_commands.json
+
+msbuild pjproject-vs14.sln /t:microsip /p:Configuration=Release-Static /p:Platform=Win32
+```
+
